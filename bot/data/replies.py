@@ -26,4 +26,5 @@ quoi = (
     'feur HAHAHAHAHAH',
 )
 
-im_regex = re.compile(r"(?i)im\s*(\S+\b|(?=\W*$))")
+im_regex = re.compile(r"(?i)(?:im|i'm|i\s+am)\s+(\S+)(?=\W*$)")
+

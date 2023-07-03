@@ -30,10 +30,10 @@ class References(commands.Cog, name="References"):
             await ctx.reply(random.choice(quoi))
             return
 
-        # # I'm Reference
-        # if im_regex.search(message.content):
-        #     await ctx.reply(f"Hi {message.content.split()[1]}, I'm Saddamizer!")
-        #     return
+        # I'm Reference
+        if im_regex.search(message.content):
+            await ctx.reply(f"Hi {message.content.split()[-1]}, I'm Saddamizer!")
+            return
 
         
 
