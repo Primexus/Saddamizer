@@ -28,3 +28,13 @@ quoi = (
 
 im_regex = re.compile(r"(?i)(?:im|i'm|i\s+am)\s+(\S+)(?=\W*$)")
 
+heeheeheehaw_regex = re.compile(r"(?i)hee\s*hee\s*hee\s*haw")
+heeheeheehaw = (
+    'GRRRRRRRRRRRR',
+    'GRRRRRR!',
+    'Grrr...',
+    'GRRRRRR!',
+    'GRRR!',
+    'GRRRRR!',
+)
+
