@@ -1,6 +1,6 @@
 import re
 
-sleep_regex = re.compile(r'\bsleep\b', re.IGNORECASE)
+sleep_regex = re.compile(r"(?i)\bsleep\b")
 sleep = (
     'IS THIS A SADDAM HUSSEIN REFERENCE?!',
     'Is this, by any chance, a reference to Saddam Hussein?',
@@ -13,7 +13,7 @@ sleep = (
     'I can\'t help but wonder, is this somehow related to Saddam Hussein?'
 )
 
-quoi_regex = re.compile(r'\bquoi\b', re.IGNORECASE)
+quoi_regex = re.compile(r"(?i)\bquoi\b(?=\W*$)")
 quoi = (
     'feur',
     'feur?',
@@ -26,3 +26,4 @@ quoi = (
     'feur HAHAHAHAHAH',
 )
 
+im_regex = re.compile(r"(?i)im\s*(\S+\b|(?=\W*$))")

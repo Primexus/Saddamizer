@@ -21,15 +21,19 @@ class References(commands.Cog, name="References"):
             return
 
         # Saddam Hussein Reference
-        if 'sleep' in message.content.lower():
+        if sleep_regex.search(message.content):
             await ctx.reply(random.choice(sleep))
+            return
 
         # Quoi Reference
-        if self.is_last_word(message, 'quoi'):
+        if quoi_regex.search(message.content):
             await ctx.reply(random.choice(quoi))
+            return
 
-        if len(message.content.split()) == 2 and self.filter_message(message) == "im":
-            await ctx.reply(f"Hi {message.content.split()[1]}, I'm Saddamizer!")
+        # # I'm Reference
+        # if im_regex.search(message.content):
+        #     await ctx.reply(f"Hi {message.content.split()[1]}, I'm Saddamizer!")
+        #     return
 
         
 

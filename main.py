@@ -37,9 +37,15 @@ class SetupBot(commands.Bot):
         self.synced = False
         intents = discord.Intents.all()
         print('[INIT]: Intents have been declared.')
+        
         activity = discord.Activity(type=discord.ActivityType.watching, name="obscure references")
-        super().__init__(command_prefix=commands.when_mentioned_or('!'), owner_id=owner, intents=intents,
-                         activity=activity, status=discord.Status.online)
+        super().__init__(
+            command_prefix=commands.when_mentioned_or('!'), 
+            owner_id=owner, 
+            intents=intents,
+            activity=activity, 
+            status=discord.Status.online
+        )
         print('[INIT]: Activity and status are up.')
 
     async def setup_hook(self) -> None:
