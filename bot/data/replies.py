@@ -26,8 +26,6 @@ quoi = (
     'feur HAHAHAHAHAH',
 )
 
-im_regex = re.compile(r"(?i)(?:im|i'm|i\s+am)\s+(\S+)(?=\W*$)")
-
 heeheeheehaw_regex = re.compile(r"(?i)hee\s*hee\s*hee\s*haw")
 heeheeheehaw = (
     'GRRRRRRRRRRRR',
@@ -38,3 +36,5 @@ heeheeheehaw = (
     'GRRRRR!',
 )
 
+im_regex = re.compile(r"(?i)(?:im|i'm|i\s+am)\s+(\S+)(?=\W*$)")
+leo_regex = re.compile(r"(?i)l[ée]o")

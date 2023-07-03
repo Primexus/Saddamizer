@@ -29,16 +29,20 @@ class References(commands.Cog, name="References"):
         if quoi_regex.search(message.content):
             await ctx.reply(random.choice(quoi))
             return
+        
+        # HEE HEE HEE HAW Reference
+        if heeheeheehaw_regex.search(message.content):
+            await ctx.reply(random.choice(heeheeheehaw))
+            return
+        
+        # Forbidden Leo Reference
+        if leo_regex.search(message.content):
+            await message.delete()
 
         # I'm Reference
         if im_regex.search(message.content):
             await ctx.reply(f"Hi {message.content.split()[-1]}, I'm Saddamizer!")
             return
         
-        # HEE HEE HEE HAW Reference
-        if heeheeheehaw_regex.search(message.content):
-            await ctx.reply(random.choice(heeheeheehaw))
-            return        
-
 async def setup(client):
     await client.add_cog(References(client))
