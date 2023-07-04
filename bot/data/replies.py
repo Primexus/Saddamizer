@@ -15,15 +15,15 @@ sleep = (
 
 quoi_regex = re.compile(r"(?i)\bquoi\b(?=\W*$)")
 quoi = (
-    'feur',
-    'feur?',
-    'feur.',
-    'feur!',
-    'feur...',
-    'feur?!',
-    'feur?!?!',
-    'feur?!?!?!',
-    'feur HAHAHAHAHAH',
+    'ffeur',
+    'ffeur?',
+    'ffeur.',
+    'ffeur!',
+    'ffeur...',
+    'ffeur?!',
+    'ffeur?!?!',
+    'ffeur?!?!?!',
+    'ffeur HAHAHAHAHAH',
 )
 
 heeheeheehaw_regex = re.compile(r"(?i)hee\s*hee\s*hee\s*haw")

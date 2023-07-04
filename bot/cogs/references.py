@@ -7,6 +7,7 @@ from bot.data.replies import *
 class References(commands.Cog, name="References"):
     def __init__(self, bot):
         self.bot = bot
+        self.leo_count = 0
 
     def is_last_word(self, message, word):
         return message.content.lower().split()[-1].rstrip('?!.,;:').strip() == word
@@ -37,7 +38,8 @@ class References(commands.Cog, name="References"):
         
         # Forbidden Leo Reference
         if leo_regex.search(message.content):
-            await message.delete()
+            self.leo_count += 1
+            await ctx.reply(f"That\'s one {self.leo_count} Léo reference.")
 
         # I'm Reference
         if im_regex.search(message.content):
